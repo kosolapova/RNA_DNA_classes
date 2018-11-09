@@ -1,0 +1,5 @@
+Classes Rna and Dna, containing functions: 
+
+	gc() : calculates GC-content
+	reverse_complement() : creates reverse complement sequence
+	transcribe() : only for Dna class, creates Rna class object, containg transcribed DNA sequence
