@@ -1,7 +1,7 @@
 class Rna(str):
     base_pairs = {'A': 'U', 'U': 'A',  'G': 'C', 'C': 'G', 'a': 'u', 'u': 'a',  'g': 'c', 'c': 'g'}
 
-    def __init__(self):
+    def __init__(self, sequence):
         self.sequence = sequence
         for base in self.sequence:
             if base not in self.base_pairs:
@@ -20,7 +20,7 @@ class Rna(str):
 class Dna(Rna):
     base_pairs = {'A': 'T', 'T': 'A', 'G': 'C', 'C': 'G', 'a': 't', 't': 'a', 'g': 'c', 'c': 'g'}
 
-    def __init__(self):
+    def __init__(self, sequence):
         self.sequence = sequence
         for base in self.sequence:
             if base not in self.base_pairs:
